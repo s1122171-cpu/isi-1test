@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <title>石の掲示板へ移動しています…</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 1秒後に確実にリダイレクト（metaは即時だとJSフォールバックが実行されない場合あり） -->
-  <meta http-equiv="refresh" content="1;URL=https://s1122171-cpu.github.io/isi1-test2/">
+
+  <!-- ✅ 即時リダイレクト -->
+  <meta http-equiv="refresh" content="0;URL='https://s1122171-cpu.github.io/isi1-test2/'">
+
   <script>
-    // JSフォールバック（万が一metaが動かないブラウザ用）
     setTimeout(() => {
       window.location.href = "https://s1122171-cpu.github.io/isi1-test2/";
     }, 100);
   </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #f8f5ed;
@@ -28,14 +32,13 @@
       padding: 30px 50px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     }
-    a { color: inherit; text-decoration: underline; }
   </style>
 </head>
+
 <body>
   <div class="stone">
     <h1>石の掲示板へ移動しています…🪨</h1>
-    <p>自動で移動します。移動しない場合は <a href="https://s1122171-cpu.github.io/isi1-test2/">こちらをクリック</a>。</p>
+    <p>（自動で開かない場合は少し待ってください）</p>
   </div>
 </body>
 </html>
-
